@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/lightblack"
+    tools:context="com.example.balaj.info.MainActivity">
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="70dp"
+    android:text="Your Self"
+    android:textSize="30dp"
+    android:textColor="#02be09"
+    android:layout_marginLeft="130dp"
+    android:layout_marginTop="30dp"/>
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="350dp"
+       android:layout_marginTop="100dp">
+       <EditText android:layout_width="280dp"
+           android:id="@+id/name"
+           android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:hint="Your Name"
+            android:inputType="textPersonName"
+            android:textColor="#00e6cf"
+            android:textColorHint="#00e6cf"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:layout_marginLeft="50dp"/>
+       <EditText
+           android:id="@+id/mail"
+           android:layout_width="280dp"
+           android:layout_height="50dp"
+           android:layout_marginTop="70dp"
+           android:hint="Your mail ID"
+           android:textColor="#00e6cf"
+           android:textColorHint="#00e6cf"
+           android:textAlignment="center"
+           android:inputType="textEmailAddress"
+           android:textSize="20dp"
+           android:layout_marginLeft="-279dp"/>
+       <EditText
+           android:id="@+id/dob"
+           android:layout_width="280dp"
+           android:layout_height="50dp"
+           android:layout_marginTop="130dp"
+           android:hint="yyyy-mm-dd"
+           android:textColor="#00e6cf"
+           android:inputType="date"
+           android:textColorHint="#00e6cf"
+           android:textAlignment="center"
+           android:textSize="20dp"
+           android:layout_marginLeft="-279dp"/>
+
+       <Button
+           android:id="@+id/submit"
+           android:layout_width="160dp"
+           android:layout_height="80dp"
+           android:layout_marginLeft="-230dp"
+           android:layout_marginTop="210dp"
+           android:background="@drawable/selector"
+           android:text="Save"
+           android:textColor="#d009e2"
+           android:onClick="OnStore"
+           android:textSize="20dp"
+           android:textAlignment="center" />
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginLeft="-250dp"
+           android:text="search here"
+           android:textSize="25dp"
+           android:id="@+id/loginlbl"
+           android:textColor="#0c16df"
+           android:layout_marginTop="258dp"/>
+   </LinearLayout>
+
+</RelativeLayout>
